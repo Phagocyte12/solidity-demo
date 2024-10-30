@@ -1,49 +1,51 @@
 ## 小项目简介
 
 ERC20 代币提供的功能包括
-`1.初始代币 
-`2.转移代币
-`3.允许其他人代表代币持有者转移代币
+
+1. 初始代币
+2. 转移代币
+3. 允许其他人代表代币持有者转移代币
 
 连接 MetaMask 钱包
 
-# 实现 ERC20 合约
+#### 实现 ERC20 合约
 
 approve
 transferForm
 
--- 编写合约 GlD.sol 并编译 `npx hardhat compile`
--- 启动本地链确认 A、B 用户的地址 `npx hardhat node`
+1. 编写合约 GlD.sol 并编译 `npx hardhat compile`
+2. 启动本地链确认 A、B 用户的地址 `npx hardhat node`
 
-# 部署合约 deploy.js
+#### 部署合约 deploy.js
 
 -部署合约本地链上
 `npx hardhat run test/deploy.js --network localhost`
 
 初始化合约，给 A、B 两个账号分别分配 7 个、3 个代币
-`1.a 账户初始有 10 个代币
-`2.a 给 b 的账户转 3 个代币
 
-# 前台合约交互
+1. a 账户初始有 10 个代币
+2. a 给 b 的账户转 3 个代币
 
-`1.切换到 A 的账户，授权给 B 账户可以从 A 账户转 3 个代币 
-`2.切换到 B 的账户，从 A 账户里面转出 3 个代币到 B 账户
+#### 前台合约交互
 
-# 添加 vite+react front-前端和合约交互
+1. 切换到 A 的账户，授权给 B 账户可以从 A 账户转 3 个代币
+2. 切换到 B 的账户，从 A 账户里面转出 3 个代币到 B 账户
 
-`npx create-vite@latest front`
-`npm install`
+#### 添加 vite+react front-前端和合约交互
 
-# 启动项目 vite+react
+1. `npx create-vite@latest front`
+2. `npm install`
+
+#### 启动项目 vite+react
 
 `npm run dev`
 
-# 相关依赖包
+#### 相关依赖包
 
-`npm install @web3-react/core`
-`npm install @web3-react/metamask`
-`npm install eventemitter3`
-`npm install @ethersproject/contracts`
+1. `npm install @web3-react/core`
+2. `npm install @web3-react/metamask`
+3. `npm install eventemitter3`
+4. `npm install @ethersproject/contracts`
 
 # 测试注意事项
 
