@@ -58,4 +58,4 @@ transferForm
 2. MetaMask 钱包 用户可以导入, hardhat 测试链用户
 3. MetaMask 钱包 代币显示, 添加代币=>把部署的在本地链，合约地址复制即可
 4. 项目中的账户、合约地址都是 hardhat 本地链上的信息，可自行修改
-5.
+5. 项目中只需要 关注如下文件 GLD.sol、deploy.js、App.jsx、useContract.jsx、useContract.jsx
